@@ -2,9 +2,9 @@ public class Rectangle {
     private double width;
     private double height;
 
-    public Rectangle(double w,double h){
-        this.width=w;
-        this.height=h;
+    public Rectangle(double w, double h){
+        this.width = w;
+        this.height = h;
     }
 
     public double area(){
@@ -13,7 +13,7 @@ public class Rectangle {
 
     /**
      * scales the rectangle
-     * @param factor
+     * @param factor is the factor by which we scale the rectangle
      */
     public void scale(double factor) {
       width = width * factor;
@@ -21,7 +21,7 @@ public class Rectangle {
     }
 
     public boolean isLargerThan(Rectangle other){
-        if(area() > other.area())
+        if (area() > other.area())
             return true;
         else
             return false;
